@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FIVICON -->
+    <link rel="shortcut icon" href="imagem/icon/fivicon.png">
+
+    <!-- LINK DOS ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JAVASCRIPT LOCAL -->
+    <script src="javascript/txt.js" defer></script>
+
+    <!-- JAVASCRIPT EFEITO MAQUINA DE ESCREVER -->
+    <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Doce & Gosto</title>
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="">
+                    <h1>Doce & Gosto</h1>
+                </a>
+            </div>
+
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Cardapio</a></li>
+                <li><a href="#">Canais</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul> <!-- Itens do Menu -->
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div> <!-- icon da Bars do menu responsivo -->
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Cardapio</a></li>
+            <li><a href="#">Canais</a></li>
+            <li><a href="#">Contato</a></li>
+        </div> <!-- MENU RESPONSIVO -->
+    </header>
+
+
+    <!-- VIDEO DA PAGINA -->
+
+    <div class="video-container">
+        <video class="video" autoplay loop muted plays-inline>
+            <source src="videos/Design sem nome.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <!-- EFEITO MAQUINA DE ESCREVER -->
+    <div class="container">
+        <div class="txt_edit">
+            Bem-vindos! <span class="animated"></span>
+        </div>
+    </div>
+
+    <!-- CONTEUDOS DA PAGINA -->
+    <div class="container_sobre">
+        <div class="txt_sobre">
+            <h1>Sobre a Doce & Gosto</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil est, quam eligendi enim sequi dolorum
+                ipsam! Tempore recusandae quaerat consequuntur culpa! Voluptas atque reprehenderit culpa officiis nam ex
+                numquam eligendi!</p>
+        </div>
+    </div>
+
+    <!-- CARDS -->
+
+    <div class="container_cards">
+        <div class="cards">
+            <img width="50px" src="imagem/icon/icons/ingredientes.png" alt="ingredientes">
+            <br>
+            <br>
+            <div class="txt_cards">
+                <h1>INGREDIENTES SELECIONADOS</h1>
+                <br>
+
+                <p>Todos os dias procuramos os ingredientes mais frescos e de melhor procedência para oferecer a você o
+                    melhor sabor e qualidade.</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img width="50px" src="imagem/icon/icons/exclusive.png" alt="Exclusivo">
+            <br>
+            <br>
+            <div class="txt_cards">
+                <h1>RECEITAS EXCLUSIVAS</h1>
+                <br>
+
+                <p>Experiência de provar um de nossos produtos é única. Nossas receitas são desenvolvidas para
+                    satisfazer os mais exigentes paladares.</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img width="50px" src="imagem/icon/icons/respeito.png" alt="respeito">
+            <br>
+            <br>
+            <div class="txt_cards">
+                <h1>RESPEITO AO CLIENTE</h1>
+                <br>
+
+                <p>Os prazos são determinados de maneira que cada detalhe seja executado à perfeição. Por isso nossas
+                    entregas são 100% garantidas, assim como nossa qualidade.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFORMAÇÕES ADICIONAIS -->
+
+    <div class="container_txt">
+        <h1><span>&#10048;</span> DELÍCIAS QUE IRÃO FAZER O SEU DIA SER MUITO MAIS FELIZ <span>&#10048;</span></h1>
+    </div>
+
+
+    <!-- CARDAPIO -->
+
+    <div class="container_cardapio">
+        <div class="caroucel_cardapio">
+            <h1>Nossos cardapios</h1>
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+
+                <div id="bullets">
+                    <label for="slide1">Novidades</label>
+                    <label for="slide2">Bolos</label>
+                    <label for="slide3">Tortas</label>
+                    <label for="slide4">Doce de Festas</label>
+                </div>
+
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="inner">
+
+                            <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <div class="cardapio_cards_container">
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/trufas.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Trufas</h1>
+                                                <h2>Deliciosas Trufas com sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Chocolate</li>
+                                                    <li>Prestígio</li>
+                                                    <li>Morango</li>
+                                                    <li>Nutella</li>
+                                                    <li>Leite Ninho</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 3,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/cones.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Cones Trufados</h1>
+                                                <h2>Deliciosos Cones Trufados com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Chocolate</li>
+                                                    <li>Prestígio</li>
+                                                    <li>Leite Ninho com Nutella</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 5,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/tortas-pote.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Torta no Pote</h1>
+                                                <h2>Deliciosas Tortas de Bolacha com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Chocolate com Ninho</li>
+                                                    <li>Prestígio</li>
+                                                    <li>Maracujá com Chocolate</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 7,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/pao-de-mel.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Pão de Mel</h1>
+                                                <h2>Deliciosos Pão de mel Trufados com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Doce de Leite</li>
+                                                    <li>Chocolate</li>
+                                                    <li>Prestígio</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 7,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/cookies.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Cookies Trufados</h1>
+                                                <h2>Deliciosos Cookies Trufados com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Chocolate</li>
+                                                    <li>Nutella</li>
+                                                    <li>Prestígio</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 8,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/Bolo-Pote.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Bolo no Pote</h1>
+                                                <h2>Deliciosos Bolos no Pote com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Chocolate com ninho</li>
+                                                    <li>Ninho com Nutella</li>
+                                                    <li>Brigadeiro</li>
+                                                    <li>prestígio</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 7,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <div class="cardapio_cards_container">
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/mini_bolo.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Bolo - Mini</h1>
+                                                <h2>Bolos Recheados para 15 Pessoas com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Brigadeiro</li>
+                                                    <li>Mousse de Chocolate</li>
+                                                    <li>Prestígio</li>
+                                                    <li>Morango</li>
+                                                    <li>Ninho com Nutella</li>
+                                                    <li>kinder bueno</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 3,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/medio_bolo.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Bolo - Medio</h1>
+                                                <h2>Bolos Recheados para 25 Pessoas com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Brigadeiro</li>
+                                                    <li>Mousse de Chocolate</li>
+                                                    <li>Prestígio</li>
+                                                    <li>Morango</li>
+                                                    <li>Ninho com Nutella</li>
+                                                    <li>kinder bueno</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 5,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/bolo-meia-receita.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Bolo - Meia Receita</h1>
+                                                <h2>Bolos Recheados para 35 Pessoas com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Brigadeiro</li>
+                                                    <li>Mousse de Chocolate</li>
+                                                    <li>Prestígio</li>
+                                                    <li>Morango</li>
+                                                    <li>Ninho com Nutella</li>
+                                                    <li>kinder bueno</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 7,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/bolo-1receita.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Bolo - 1 Receita</h1>
+                                                <h2>Bolos Recheados para 50 Pessoas com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Brigadeiro</li>
+                                                    <li>Mousse de Chocolate</li>
+                                                    <li>Prestígio</li>
+                                                    <li>Morango</li>
+                                                    <li>Ninho com Nutella</li>
+                                                    <li>kinder bueno</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 7,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/bolo-1receita-e-meia.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Bolo - 1 Receita e Meia</h1>
+                                                <h2>Bolos Recheados para 70 Pessoas com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Brigadeiro</li>
+                                                    <li>Mousse de Chocolate</li>
+                                                    <li>Prestígio</li>
+                                                    <li>Morango</li>
+                                                    <li>Ninho com Nutella</li>
+                                                    <li>kinder bueno</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 8,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <div class="cardapio_cards_container">
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/torta-bolacha.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Torta de Bolacha</h1>
+                                                <h2>Torta de Bolacha para 15 Pessoas com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Brigadeiro</li>
+                                                    <li>Mousse de Chocolate</li>
+                                                    <li>Prestígio</li>
+                                                    <li>Morango</li>
+                                                    <li>Ninho com Nutella</li>
+                                                    <li>kinder bueno</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 3,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/torta-holandesa.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Torta holandesa</h1>
+                                                <h2>Torta holandesa para 15 Pessoas com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Brigadeiro</li>
+                                                    <li>Mousse de Chocolate</li>
+                                                    <li>Prestígio</li>
+                                                    <li>Morango</li>
+                                                    <li>Ninho com Nutella</li>
+                                                    <li>kinder bueno</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 5,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cardapio_cards">
+                                            <img src="imagem/Produtos/Banoffe.jpg" alt="">
+                                            <div class="cardapio_card">
+                                                <h1>Torta - Banoffee</h1>
+                                                <h2>Torta Banoffee para 15 Pessoas com Sabores de:</h2>
+                                            </div>
+                                            <div class="sabores">
+                                                <ul>
+                                                    <li>Banana e Doce de Leite</li>
+                                                </ul>
+                                            </div>
+                                            <div class="buttons-span">
+                                                <span>R$ 7,50</span>
+                                                <button>Comprar</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="slide slide_4">
+                                <div class="slide-content">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JAVASCRIPT DO MENU-->
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+</body>
+
+</html>
